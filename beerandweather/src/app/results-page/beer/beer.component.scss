@@ -1,5 +1,7 @@
 .beer {
+  padding-bottom: 240px;
   &-image {
+    position: fixed;
     max-height: 15rem;
   }
   &-details {
@@ -13,10 +15,6 @@
       letter-spacing: 1.38px;
       flex: 1;
     }
-  }
-  &-descriptions {
-    overflow: scroll;
-    height: calc(100vh + 7rem);
   }
   &-description {
     font-family: TitilliumWeb-ExtraLight;

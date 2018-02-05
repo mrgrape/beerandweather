@@ -9,7 +9,7 @@
 
   <div class="row">
     <div class="col-sm-3">
-      <img class="beer-image mt-3" src="../../../assets/img/beer.svg" alt="beer">
+      <img class="beer-image mt-3" src="../../../assets/img/beer.svg" alt="{{beerPerfectMatch?.style?.name}}">
     </div>
     <div class="col-sm-9">
       <div class="row">
@@ -29,18 +29,27 @@
       <div class="row">
         <div class="col-sm my-4">
           <ul class="beer-details">
-            <li class="beer-details-item">ABV: {{beerPerfectMatch?.abv}}</li>
-            <li class="beer-details-item">IBU:
+            <li class="beer-details-item">
+              <label>ABV: </label>
+              <span *ngIf="beerPerfectMatch?.abv">{{beerPerfectMatch?.abv}}</span>
+              <span *ngIf="!beerPerfectMatch?.abv">N/A</span>
+            </li>
+            <li class="beer-details-item">
+              <label>IBU: </label>
               <span *ngIf="beerPerfectMatch?.ibu">{{beerPerfectMatch?.ibu}}</span>
               <span *ngIf="!beerPerfectMatch?.ibu && beerPerfectMatch?.style?.ibuMin"> {{beerPerfectMatch?.style.ibuMin}}</span>
               <span *ngIf="!beerPerfectMatch?.ibu && !beerPerfectMatch?.style?.ibuMin">N/A</span>
             </li>
-            <li class="beer-details-item">SRM: {{beerPerfectMatch?.style.srmMin}} - {{beerPerfectMatch?.style.srmMax}}</li>
-            <li class="beer-details-item">OG: {{beerPerfectMatch?.style.ogMin}}</li>
+            <li class="beer-details-item">
+              <label>SRM: </label>
+              {{beerPerfectMatch?.style.srmMin}} - {{beerPerfectMatch?.style.srmMax}}</li>
+            <li class="beer-details-item">
+              <label>OG: </label>
+              {{beerPerfectMatch?.style.ogMin}}</li>
           </ul>
         </div>
       </div>
-      <div class="row beer-descriptions">
+      <div class="row">
         <div class="col-sm">
           <label *ngIf="beerPerfectMatch?.description">Beer Description:</label>
           <p class="beer-description" *ngIf="beerPerfectMatch?.description">{{beerPerfectMatch?.description}}
