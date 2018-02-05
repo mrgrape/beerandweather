@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="140px" height="66px" viewBox="0 0 140 66" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Fog</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="100%" y1="50%" x2="0%" y2="50%" id="linearGradient-1">
+            <stop stop-color="#B0F5FF" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="22.0065398%" y1="12.8431602%" x2="100%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#E1F7FB" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Weather-Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-933.000000, -64.000000)">
+        <g id="Foggy" transform="translate(933.000000, 64.000000)">
+            <g id="Fog">
+                <g id="Air-Row" transform="translate(0.000000, 57.000000)">
+                    <g id="Air">
+                        <rect id="Rectangle-6" fill="url(#linearGradient-1)" x="0" y="0" width="102" height="9" rx="4.5"></rect>
+                        <rect id="Rectangle-6" fill="url(#linearGradient-2)" x="1.24390244" y="1" width="99.5121951" height="7" rx="3.5"></rect>
+                    </g>
+                    <g id="Air" transform="translate(110.000000, 0.000000)">
+                        <rect id="Rectangle-6" fill="url(#linearGradient-1)" x="0" y="0" width="30" height="9" rx="4.5"></rect>
+                        <rect id="Rectangle-6" fill="url(#linearGradient-2)" x="0.365853659" y="1" width="29.2682927" height="7" rx="3.5"></rect>
+                    </g>
+                </g>
+                <g id="Air" transform="translate(15.000000, 38.000000)">
+                    <rect id="Rectangle-6" fill="url(#linearGradient-1)" x="0" y="0" width="116" height="9" rx="4.5"></rect>
+                    <rect id="Rectangle-6" fill="url(#linearGradient-2)" x="1.41463415" y="1" width="113.170732" height="7" rx="3.5"></rect>
+                </g>
+                <g id="Air-Row" transform="translate(3.000000, 19.000000)">
+                    <g id="Air">
+                        <rect id="Rectangle-6" fill="url(#linearGradient-1)" x="0" y="0" width="88" height="9" rx="4.5"></rect>
+                        <rect id="Rectangle-6" fill="url(#linearGradient-2)" x="1.07317073" y="1" width="85.8536585" height="7" rx="3.5"></rect>
+                    </g>
+                    <g id="Air" transform="translate(93.000000, 0.000000)">
+                        <rect id="Rectangle-6" fill="url(#linearGradient-1)" x="0" y="0" width="42" height="9" rx="4.5"></rect>
+                        <rect id="Rectangle-6" fill="url(#linearGradient-2)" x="0.512195122" y="1" width="40.9756098" height="7" rx="3.5"></rect>
+                    </g>
+                </g>
+                <g id="Air" transform="translate(17.000000, 0.000000)">
+                    <rect id="Rectangle-6" fill="url(#linearGradient-1)" x="0" y="0" width="102" height="9" rx="4.5"></rect>
+                    <rect id="Rectangle-6" fill="url(#linearGradient-2)" x="1.24390244" y="1" width="99.5121951" height="7" rx="3.5"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

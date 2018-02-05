@@ -1,0 +1,20 @@
+<div class="weather">
+  <ul class="weather-strip">
+    <li class="weather-strip-item" *ngFor="let day of weeklyWeather[0], let i = index" (click)="selectDay(day, i)" [ngClass]="{'active': currentIndex === i}">
+
+      <div class="size-normal" *ngIf="currentIndex !== i">
+        <label class="weather-label">{{day.time | convertTime}}</label>
+        <img class="weather-icon" src="../../../assets/img/{{day.icon}}.svg" alt="{{day.icon}}">
+        <p class="weather-temp">{{day.temperatureHigh}}</p>
+      </div>
+
+      <div class="size-expanded" *ngIf="currentIndex === i">
+        <img class="weather-icon" src="../../../assets/img/{{day.icon}}.svg" alt="{{day.icon}}">
+        <div>
+          <label class="weather-label">{{day.time | convertTime}}</label>
+          <p class="weather-temp">{{day.temperatureHigh}}</p>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>

@@ -1,0 +1,21 @@
+<div class="background-scene">
+  <div class="beerShelves">
+  </div>
+  <div class="container-fluid" *ngIf="!showResults">
+    <div class="row pt-5">
+      <div class="col-10 col-sm-8 col-md-8 col-lg-8 col-xl-6">
+        <app-search></app-search>
+
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid" *ngIf="showResults">
+    <div class="row pt-5">
+      <div class="col-11">
+        <!-- <button (click)="test()">test</button> -->
+        <app-results-page></app-results-page>
+        <!--  <app-beer></app-beer> -->
+      </div>
+    </div>
+  </div>
+</div>

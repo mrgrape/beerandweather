@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="105px" height="106px" viewBox="0 0 105 106" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Sunny</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M38.2015883,0.193090578 C16.3756009,1.35960567 -0.386694626,20.2594531 0.762041554,42.406411 C1.91077774,64.5533688 20.5375873,81.5621687 42.3627018,80.3956536 C64.1895621,79.2300242 80.9518576,60.3310625 79.8022486,38.1832189 C78.6901742,16.7537077 61.219084,0.135517699 40.3157517,0.137289172 C39.6148131,0.137289172 38.9086372,0.155889641 38.2015883,0.193090578" id="path-1"></path>
+        <filter x="-24.6%" y="-24.3%" width="149.3%" height="148.6%" filterUnits="objectBoundingBox" id="filter-3">
+            <feMorphology radius="1.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.479485544   0 0 0 0 0.372575   0 0 0 0 0.0785710016  0 0 0 1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <linearGradient x1="0%" y1="0%" x2="100%" y2="100%" id="linearGradient-4">
+            <stop stop-color="#FFF3B5" offset="0%"></stop>
+            <stop stop-color="#FFB300" offset="100%"></stop>
+        </linearGradient>
+        <path d="M34.0413477,0.589014836 C14.3592023,1.64126991 -0.756804155,18.6846135 0.280200846,38.6562022 C1.31633295,58.627791 18.1126715,73.9660916 37.7939441,72.9147223 C57.4769624,71.8624672 72.5929688,54.8200094 71.5550909,34.8475349 C70.5538748,15.5234196 54.7997786,0.536756377 35.9486338,0.53852785 C35.3166544,0.53852785 34.6794375,0.555356845 34.0413477,0.589014836" id="path-5"></path>
+        <linearGradient x1="0%" y1="0%" x2="100%" y2="100%" id="linearGradient-7">
+            <stop stop-color="#FFC000" offset="0%"></stop>
+            <stop stop-color="#F8BA03" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Weather-Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-1135.000000, -40.000000)">
+        <g id="Sunny-Icon" transform="translate(1147.000000, 52.000000)">
+            <g id="Sunny">
+                <g id="Group-7" transform="translate(0.410158, 0.627486)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="Clip-6" fill="black" fill-opacity="1">
+                        <use filter="url(#filter-3)" xlink:href="#path-1"></use>
+                    </g>
+                    <path d="M38.2015883,0.193090578 C16.3756009,1.35960567 -0.386694626,20.2594531 0.762041554,42.406411 C1.91077774,64.5533688 20.5375873,81.5621687 42.3627018,80.3956536 C64.1895621,79.2300242 80.9518576,60.3310625 79.8022486,38.1832189 C78.6901742,16.7537077 61.219084,0.135517699 40.3157517,0.137289172 C39.6148131,0.137289172 38.9086372,0.155889641 38.2015883,0.193090578" id="Fill-5" fill="url(#linearGradient-4)" mask="url(#mask-2)"></path>
+                </g>
+                <g id="Group-10" transform="translate(4.774657, 4.170432)">
+                    <mask id="mask-6" fill="white">
+                        <use xlink:href="#path-5"></use>
+                    </mask>
+                    <g id="Clip-9"></g>
+                    <path d="M34.0413477,0.589014836 C14.3592023,1.64126991 -0.756804155,18.6846135 0.280200846,38.6562022 C1.31633295,58.627791 18.1126715,73.9660916 37.7939441,72.9147223 C57.4769624,71.8624672 72.5929688,54.8200094 71.5550909,34.8475349 C70.5538748,15.5234196 54.7997786,0.536756377 35.9486338,0.53852785 C35.3166544,0.53852785 34.6794375,0.555356845 34.0413477,0.589014836" id="Fill-8" fill="url(#linearGradient-7)" mask="url(#mask-6)"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

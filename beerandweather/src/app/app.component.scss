@@ -1,0 +1,14 @@
+$primary-color: #344257;
+$primary-success-color: #4AB545;
+.btn {
+  transition: all 0.2s ease-in-out;
+  &-success {
+    background: $primary-success-color;
+    &:hover {
+      border-color: $primary-success-color;
+    }
+    &:disabled {
+      cursor: not-allowed;
+    }
+  }
+}

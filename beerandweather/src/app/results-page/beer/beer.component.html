@@ -1,0 +1,58 @@
+<div class="container-fluid beer">
+  <!--   <div>
+    <tabset>
+      <tab heading="Perfect Match" id="tab1">Perfect Match</tab>
+      <tab heading="Runner Up">Runner Up</tab>
+      <tab heading="WildCard">WildCard</tab>
+    </tabset>
+  </div> -->
+
+  <div class="row">
+    <div class="col-sm-3">
+      <img class="beer-image mt-3" src="../../../assets/img/beer.svg" alt="beer">
+    </div>
+    <div class="col-sm-9">
+      <div class="row">
+        <div class="col-sm-12">
+          <label>Brewed By:</label>
+          <h2>{{beerPerfectMatch?.breweries[0].name}}</h2>
+        </div>
+        <div class="col-sm mt-4">
+          <label>Name:</label>
+          <h2>{{beerPerfectMatch?.name}}</h2>
+        </div>
+        <div class="col-sm mt-4">
+          <label>Style:</label>
+          <h2>{{beerPerfectMatch?.style?.name}}</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm my-4">
+          <ul class="beer-details">
+            <li class="beer-details-item">ABV: {{beerPerfectMatch?.abv}}</li>
+            <li class="beer-details-item">IBU:
+              <span *ngIf="beerPerfectMatch?.ibu">{{beerPerfectMatch?.ibu}}</span>
+              <span *ngIf="!beerPerfectMatch?.ibu && beerPerfectMatch?.style?.ibuMin"> {{beerPerfectMatch?.style.ibuMin}}</span>
+              <span *ngIf="!beerPerfectMatch?.ibu && !beerPerfectMatch?.style?.ibuMin">N/A</span>
+            </li>
+            <li class="beer-details-item">SRM: {{beerPerfectMatch?.style.srmMin}} - {{beerPerfectMatch?.style.srmMax}}</li>
+            <li class="beer-details-item">OG: {{beerPerfectMatch?.style.ogMin}}</li>
+          </ul>
+        </div>
+      </div>
+      <div class="row beer-descriptions">
+        <div class="col-sm">
+          <label *ngIf="beerPerfectMatch?.description">Beer Description:</label>
+          <p class="beer-description" *ngIf="beerPerfectMatch?.description">{{beerPerfectMatch?.description}}
+          </p>
+          <label *ngIf="beerPerfectMatch?.breweries[0]?.description">Brewer Description:</label>
+          <p class="beer-description" *ngIf="beerPerfectMatch?.breweries[0]?.description">{{beerPerfectMatch?.breweries[0]?.description}}
+          </p>
+          <label *ngIf="beerPerfectMatch?.foodPairings">Food Pairing:</label>
+          <p class="beer-description" *ngIf="beerPerfectMatch?.foodPairings">{{beerPerfectMatch?.foodPairings}}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

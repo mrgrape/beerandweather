@@ -1,0 +1,110 @@
+.weather {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  background: #344257;
+  height: 200px;
+  width: 100%;
+  box-shadow: -20px 0 100px 50px rgba(29, 36, 47, 0.35);
+  &-strip {
+    display: flex;
+    flex-direction: row;
+    width: inherit;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    cursor: pointer;
+    &-item {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+      .weather-icon {
+        margin: 1rem 0 1rem 0;
+        height: 4rem;
+        width: 3rem;
+      }
+    }
+  }
+  &-label {
+    font-family: TitilliumWeb-SemiBold;
+    font-size: 12px;
+    letter-spacing: 1.25px;
+    color: white;
+    text-transform: uppercase;
+    padding: 0 1rem;
+    border-radius: 1rem;
+    background: rgba(0, 0, 0, 0.3);
+    margin: 0;
+  }
+  &-temp {
+    position: relative;
+    font-family: TitilliumWeb-Light;
+    font-size: 2.5rem;
+    color: white;
+    letter-spacing: 3.75px;
+    line-height: 2.5rem;
+    margin: 0;
+    &:after {
+      content: '';
+      position: absolute;
+      background-color: transparent;
+      border: 2px solid white;
+      height: 8px;
+      width: 8px;
+      border-radius: 50%;
+    }
+  }
+}
+
+.active {
+  flex: 2;
+}
+
+.size-normal {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+}
+
+.size-expanded {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex: 2;
+  transition: all 0.2s ease-in-out;
+  &:after {
+    content: '';
+    position: absolute;
+    top: -24px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0;
+    height: 0;
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent; //  border-bottom: 25px solid #344257;
+    border-bottom: 25px solid #344257;
+  }
+  .weather-icon {
+    margin-right: 2rem;
+    height: 4.5rem;
+    width: 4.5rem;
+  }
+  .weather-temp {
+    margin-top: 1rem;
+    font-size: 3.5rem;
+    line-height: 3.5rem;
+  }
+  >div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

@@ -1,0 +1,10 @@
+<form class="mt-5" [formGroup]="zipCodeForm" (ngSubmit)="onSubmit()" novalidate>
+  <h1>Beer And Weather</h1>
+  <div class="input-group py-4">
+    <input type="text" class="form-control" placeholder="Enter any 5 digit zip code..." aria-label="zip code" formControlName="zipcode" [value]="66209">
+    <div class="input-group-append">
+      <button type="submit" class="btn btn-success" [disabled]="zipCodeForm.valid !== true">Discover Beer</button>
+    </div>
+  </div>
+  <p>Enter a zipcode and we'll tell you what type of beer you should be drinking based on your current weather!</p>
+</form>

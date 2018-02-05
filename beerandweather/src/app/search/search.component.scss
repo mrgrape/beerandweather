@@ -1,0 +1,22 @@
+@import '../app.component.scss';
+form {
+  background: rgba(57, 71, 92, 0.55);
+  background-image: radial-gradient(51% 150%, rgba(71, 86, 115, 0.20) 50%, #3A475D 100%);
+  box-shadow: 0 3px 15px -1px rgba(0, 0, 0, .15);
+  border-radius: 10px;
+  padding: 2rem 3rem;
+  input {
+    border: 2px solid white;
+    &:active,
+    &:focus {
+      outline: none;
+      box-shadow: none;
+      border: 2px solid $primary-success-color;
+    }
+  }
+}
+
+h1,
+p {
+  color: white;
+}
